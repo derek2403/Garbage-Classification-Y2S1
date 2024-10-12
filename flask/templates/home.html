@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Started</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('/static/background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #173b26;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 25px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            margin: 0 10px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #173b26;
+        }
+
+        p {
+            font-size: 22px;
+            margin-top: 10px;
+            color: #173b26;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Server Started Successfully</h1>
+        <p>Your Flask server is up and running on http://127.0.0.1:5000/</p>
+        <img src="/static/play.png" alt="Server Started">
+    </div>
+</body>
+</html>
